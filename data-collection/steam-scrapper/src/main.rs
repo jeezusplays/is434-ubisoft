@@ -140,7 +140,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     review.recommendationid,
                     review.author.steamid,
                     review.timestamp_created,
-                    review.author.playtime_forever,
+                    review.author.playtime_forever.unwrap_or(0),
                     review.review.replace(",", "").replace("\n", " "), // Escape commas and newlines
                     review.voted_up,
                     review.votes_up,
@@ -151,8 +151,8 @@ async fn main() -> Result<(), anyhow::Error> {
                     review.received_for_free,
                     review.written_during_early_access,
                     review.timestamp_updated,
-                    review.author.playtime_at_review,
-                    review.author.playtime_last_two_weeks,
+                    review.author.playtime_at_review.unwrap_or(0),
+                    review.author.playtime_last_two_weeks.unwrap_or(0),
                     review.language,
                     review.steam_china_location
                 ).unwrap();
