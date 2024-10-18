@@ -8,8 +8,6 @@
 5. do graph network analysis for the sentiment analysis data (group by positive, negative, neutral)
 
 # Subreddit to focus on 
-https://www.reddit.com/r/gaming/
-https://www.reddit.com/r/Games/
 
 https://www.reddit.com/r/ubisoft/
 https://www.reddit.com/r/AssassinsCreed 
@@ -56,22 +54,3 @@ https://www.reddit.com/r/RollerChampions
 https://www.reddit.com/r/Rabbids 
 https://www.reddit.com/r/SouthParkTheFracturedButWhole 
 https://www.reddit.com/r/RabbidsLegendOfTheMultiverse 
-
-https://www.reddit.com/r/Blizzard/
-https://www.reddit.com/r/WorldOfWarcraft 
-https://www.reddit.com/r/WoWClassic 
-https://www.reddit.com/r/Warcraft3 
-https://www.reddit.com/r/Warcraft3Reforged 
-https://www.reddit.com/r/WarcraftArclightRumble 
-https://www.reddit.com/r/Diablo 
-https://www.reddit.com/r/Diablo2 
-https://www.reddit.com/r/Diablo2Resurrected 
-https://www.reddit.com/r/Diablo3 
-https://www.reddit.com/r/DiabloImmortal 
-https://www.reddit.com/r/Diablo4 
-https://www.reddit.com/r/Overwatch 
-https://www.reddit.com/r/Overwatch2 
-https://www.reddit.com/r/Hearthstone 
-https://www.reddit.com/r/Starcraft 
-https://www.reddit.com/r/Starcraft2 
-https://www.reddit.com/r/HeroesOfTheStorm
