@@ -1,0 +1,2 @@
+twscrape
+python-dotenv
