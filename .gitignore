@@ -4,3 +4,5 @@
 *.csv
 /venv
 cookies.json
+acc.json
+proxies.txt
