@@ -1,2 +1,3 @@
 twscrape
 python-dotenv
+transformers

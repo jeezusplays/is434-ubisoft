@@ -1,7 +1,6 @@
 .env
 .venv
 .DS_Store
-*.csv
 /venv
 cookies.json
 acc.json

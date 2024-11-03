@@ -12,5 +12,3 @@ Current implementation uses Bright Data proxy service. download your own datacen
 3. add your cookies (mainly ct0) to `cookies.json`
 4. edit twitter_scraper.ipynb to your settings and run it
 
-
-
