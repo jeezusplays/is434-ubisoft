@@ -6,3 +6,5 @@ cookies.json
 acc.json
 proxies.txt
 accounts.db
+*.csv
+**/cardiffnlp/twitter-xlm-roberta-base-sentiment/
