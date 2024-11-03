@@ -1,10 +1,10 @@
 # Requirements:
 - Python 3.11.10 (tested and working for sam, does not mean other versions will not work)
-    - pip install -r requirements.txt
+    - `pip install -r requirements.txt`
 - CUDA (For faster inferance)
 - spaCy (https://spacy.io/usage)
 - Pytorch (https://pytorch.org/get-started/locally/)
-- Hugging face tiwtter roBERTa model (https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/tree/main), download all files (except ipynb_checkpoints) and place in the same directory as the script under `cardiffnlp/twitter-roberta-base-sentiment`
+- Hugging face twitter/X roBERTa model (https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/tree/main), download all files (except ipynb_checkpoints) and place in the same directory as the script under `cardiffnlp/twitter-roberta-base-sentiment`
 
     ![alt text](image.png)
 
