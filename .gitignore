@@ -10,3 +10,4 @@ accounts.db
 **/twitter-xlm-roberta-base-sentiment/
 **/twitter-roberta-base-sentiment/
 *.7z
+**/analytics/*.html
