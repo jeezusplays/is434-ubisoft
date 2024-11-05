@@ -6,3 +6,7 @@ cookies.json
 acc.json
 proxies.txt
 accounts.db
+*.csv
+**/twitter-xlm-roberta-base-sentiment/
+**/twitter-roberta-base-sentiment/
+*.7z
