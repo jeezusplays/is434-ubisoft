@@ -4,6 +4,8 @@ import numpy as np
 from scipy.special import softmax
 import re
 import spacy
+import urllib
+import csv
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -12,6 +14,15 @@ nlp = spacy.load("en_core_web_sm")
 MODEL = "cardiffnlp/twitter-roberta-base-sentiment"
 tokenizer = AutoTokenizer.from_pretrained(MODEL)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL)
+
+task='sentiment'
+labels=[]
+mapping_link = f"https://raw.githubusercontent.com/cardiffnlp/tweeteval/main/datasets/{task}/mapping.txt"
+with urllib.request.urlopen(mapping_link) as f:
+    html = f.read().decode('utf-8').split("\n")
+    csvreader = csv.reader(html, delimiter='\t')
+labels = [row[1] for row in csvreader if len(row) > 1]
+
 
 def preprocess_text(text):
     """
@@ -50,15 +61,14 @@ def get_sentiment(text) -> dict:
         ranking = np.argsort(scores)
         ranking = ranking[::-1]
 
-        negative = scores[ranking[0]]
-        neutral = scores[ranking[1]]
-        positive = scores[ranking[2]]
+        sentiment={}
+
+        for i in range(scores.shape[0]):
+            l = labels[ranking[i]]
+            s = scores[ranking[i]]
+            sentiment[l]=s
         
-        return {
-            "positive": positive,
-            "neutral": neutral,
-            "negative": negative
-        }
+        return sentiment
         
     except:
         return {
