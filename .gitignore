@@ -11,3 +11,6 @@ accounts.db
 **/twitter-roberta-base-sentiment/
 *.7z
 **/topic_model/*.html
+**/topic_model/output/**
+**/topic_model/model/**
+**/topic_model/data/**
