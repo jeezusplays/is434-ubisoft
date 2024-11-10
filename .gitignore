@@ -11,3 +11,5 @@ accounts.db
 **/twitter-roberta-base-sentiment/
 *.7z
 *.html
+**/output/
+**/model/
